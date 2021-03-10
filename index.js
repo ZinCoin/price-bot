@@ -9,7 +9,6 @@ const numeral = require('numeral')
 const _ = require('lodash')
 const axios = require('axios')
 
-0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f
 
 // SERVER CONFIG
 const PORT = process.env.PORT || 5000
