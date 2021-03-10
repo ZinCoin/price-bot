@@ -129,7 +129,7 @@ async function monitorPrice() {
       inputTokenSymbol: 'ETH',
       inputTokenAddress: '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
       outputTokenSymbol: 'UNI',
-      outputTokenAddress: ' 0x1f9840a85d5af5bf1d1762f925bdaddc4201f984',
+      outputTokenAddress: '0x1f9840a85d5af5bf1d1762f925bdaddc4201f984',
       inputAmount: web3.utils.toWei('1', 'ETHER')
     })
     
