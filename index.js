@@ -100,7 +100,7 @@ async function monitorPrice() {
       inputTokenAddress: '0x6b175474e89094c44da98b954eedeac495271d0f',
       outputTokenSymbol: 'BAT',
       outputTokenAddress: '0x0d8775f648430679a709e98d2b0cb6250d2887ef',
-      inputAmount: web3.utils.toWei('1', 'DAI')
+      inputAmount: web3.utils.toWei('1', 'ETHER')
     })
     
      await checkPair({
