@@ -58,6 +58,7 @@ async function checkPair(args) {
     'Unisawp/1Inch': web3.utils.fromWei(uniswapResult, 'Ether') - web3.utils.fromWei(oneinchResult, 'Ether'),
     'Kyber Expected Rate': web3.utils.fromWei(kyberResult.expectedRate, 'Ether'),
     'Kyber Min Return': web3.utils.fromWei(kyberResult.slippageRate, 'Ether'),
+    'Unisawp/Kyber': web3.utils.fromWei(uniswapResult, 'Ether') - web3.utils.fromWei(kyberResult.slippageRate, 'Ether'),
     'Timestamp': moment().tz('America/Chicago').format(),
   }])
 }
