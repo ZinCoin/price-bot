@@ -64,6 +64,7 @@ async function checkPair(args) {
   }])
 }
 
+
 let priceMonitor
 let monitoringPrice = false
 
@@ -94,6 +95,14 @@ async function monitorPrice() {
    //   outputTokenAddress: '0x6b175474e89094c44da98b954eedeac495271d0f',
    //   inputAmount: web3.utils.toWei('1', 'ETHER')
   //  })
+    
+    await checkPair({
+      inputTokenSymbol: 'DAI',
+      inputTokenAddress: '0x6b175474e89094c44da98b954eedeac495271d0f',
+      outputTokenSymbol: 'BAT',
+      outputTokenAddress: '0x0d8775f648430679a709e98d2b0cb6250d2887ef',
+      inputAmount: web3.utils.toWei('1', 'DAI')
+    })
     
      await checkPair({
       inputTokenSymbol: 'ETH',
