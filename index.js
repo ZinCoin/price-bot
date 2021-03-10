@@ -55,7 +55,6 @@ async function checkPair(args) {
     'Input Amount': web3.utils.fromWei(inputAmount, 'Ether'),
     'Uniswap Return': web3.utils.fromWei(uniswapResult, 'Ether'),
    '1Inch Return': web3.utils.fromWei(oneinchResult, 'Ether'),
-    '1Inch Min Return': web3.utils.fromWei(oneinchResult.slippageRate, 'Ether'),
     'Unisawp/1Inch': web3.utils.fromWei(uniswapResult, 'Ether') - web3.utils.fromWei(oneinchResult, 'Ether'),
     'Kyber Expected Rate': web3.utils.fromWei(kyberResult.expectedRate, 'Ether'),
     'Kyber Min Return': web3.utils.fromWei(kyberResult.slippageRate, 'Ether'),
