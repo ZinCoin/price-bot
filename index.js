@@ -91,8 +91,8 @@ async function monitorPrice() {
     await checkPair({
       inputTokenSymbol: 'ETH',
       inputTokenAddress: '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
-      outputTokenSymbol: 'VISION',
-      outputTokenAddress: '0xf406f7a9046793267bc276908778b29563323996',
+      outputTokenSymbol: 'UMA',
+      outputTokenAddress: '0x04Fa0d235C4abf4BcF4787aF4CF447DE572eF828',
       inputAmount: web3.utils.toWei('1', 'ETHER')
     })
     
