@@ -112,19 +112,47 @@ async function monitorPrice() {
    //   inputAmount: web3.utils.toWei('1', 'ETHER')
   //  })
     
-    await checkPair({
-      inputTokenSymbol: 'DAI',
-      inputTokenAddress: '0x6b175474e89094c44da98b954eedeac495271d0f',
-      outputTokenSymbol: 'BAT',
-      outputTokenAddress: '0x0d8775f648430679a709e98d2b0cb6250d2887ef',
-      inputAmount: web3.utils.toWei('1', 'ETHER')
-    })
     
+   
      await checkPair({
       inputTokenSymbol: 'ETH',
       inputTokenAddress: '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
       outputTokenSymbol: 'BAT',
       outputTokenAddress: '0x0d8775f648430679a709e98d2b0cb6250d2887ef',
+      inputAmount: web3.utils.toWei('1', 'ETHER')
+    })
+    
+    //Uniswap (UNI)
+   // UNI token served as governance token for Uniswap protocol with 1 billion UNI have been minted at genesis. 
+  // 60% of the UNI genesis supply is allocated to Uniswap community members and remaining for team, investors and advisors.
+    await checkPair({
+      inputTokenSymbol: 'ETH',
+      inputTokenAddress: '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
+      outputTokenSymbol: 'UNI',
+      outputTokenAddress: ' 0x1f9840a85d5af5bf1d1762f925bdaddc4201f984',
+      inputAmount: web3.utils.toWei('1', 'ETHER')
+    })
+    
+  //  Graph Token (GRT)
+// The Graph is an indexing protocol and global API for organizing blockchain data
+    // and making it easily accessible with GraphQL.
+    
+    await checkPair({
+      inputTokenSymbol: 'ETH',
+      inputTokenAddress: '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
+      outputTokenSymbol: 'GRT',
+      outputTokenAddress: '0xc944e90c64b2c07662a292be6244bdf05cda44a7',
+      inputAmount: web3.utils.toWei('1', 'ETHER')
+    })
+    
+   // Wrapped Filecoin (WFIL)
+// Wrapped Filecoin is an Ethereum based representation of Filecoin.
+    
+    await checkPair({
+      inputTokenSymbol: 'ETH',
+      inputTokenAddress: '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',
+      outputTokenSymbol: 'WFIL',
+      outputTokenAddress: '0x6e1A19F235bE7ED8E3369eF73b196C07257494DE',
       inputAmount: web3.utils.toWei('1', 'ETHER')
     })
 
